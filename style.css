@@ -53,7 +53,7 @@ html::-webkit-scrollbar-thumb{
     transform: scale(1.1);
     box-shadow: 0 0 25px 0 var(--main-color);
 }
-.navbar1 a{
+.navbar a{
     font-size: 1.8rem;
     color: var(--text-color);
     margin-left: 4rem;
@@ -61,10 +61,13 @@ html::-webkit-scrollbar-thumb{
     transition: 0.3s ease;
     border-bottom:3px solid transparent;
 }
-.navbar1 a:hover
-.navbar1 a.active{
+.navbar a:hover{
+    border-bottom: 2px solid orange;
+
+}
+.navbar a:active{
     color: var(--main-color);
-    border-bottom: 3px solid var(--main-color);
+    border-bottom: 6px solid white;
 }
 #menu-icon{
     font-size: 3.6rem;
@@ -75,7 +78,7 @@ html::-webkit-scrollbar-thumb{
     #menu-icon{
         display: block;
     }
-    .navbar1{
+    .navbar{
         position: absolute;
         top: 100%;
         right: 0;
@@ -88,16 +91,16 @@ html::-webkit-scrollbar-thumb{
         border-top: 0.1rem solid rgba(0, 0, 0, 0.1);
         display: none;
     }
-    .navbar1 .active{
+    .navbar .active{
         display: block;
     }
-    .navbar1 a{
+    .navbar a{
         display: block;
         font-size: 2rem;
         margin: 3rem 0;
     }
-    .navbar1:hover
-    .navbar1 a.active{
+    .navbar:hover
+    .navbar a.active{
         padding: 1rem;
         border-radius: 0.5rem;
         border-bottom: 0.5rem;
