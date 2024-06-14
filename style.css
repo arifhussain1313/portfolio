@@ -63,7 +63,6 @@ html::-webkit-scrollbar-thumb{
 }
 .navbar a:hover{
     border-bottom: 2px solid orange;
-
 }
 .navbar a:active{
     color: var(--main-color);
