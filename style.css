@@ -125,6 +125,12 @@ section{
                 0 0 50px var(--main-color);
 cursor: pointer;
 }
+.home-img img:hover{
+   box-shadow:  0 0 10px var(--main-color)
+                0 0 15px var(--main-color)
+                0 0 70px var(--main-color);
+    transform: scale(1.01);
+}
 .home .home-content h1{
     font-size: 6rem;
     font-weight: 700;
@@ -162,6 +168,11 @@ span{
     box-shadow: 0 0 25px var(--main-color);
     background: var(--main-color);
 }
+.home-button{
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+}
 .button{
     all: unset;
     display: flex;
@@ -183,6 +194,7 @@ span{
 }
 .button:hover{
     color: black;
+    box-shadow: 0 0 25px var(--main-color);
 }
 button:active{
     border-color: var(--main-color);
@@ -224,4 +236,62 @@ button:active{
 .button:active::before,
 .button:active::after{
     background: transparent ;
+}
+.typing-text{
+    font-size: 34px;
+    font-weight: 600;
+    min-width: 280px;
+}
+.typing-text span{
+    position: relative;
+}
+.typing-text span::before{
+    content: software developer;
+    color: var(--main-color);
+    animation: words 20s  infinite;
+}
+.typing-text span ::after{
+    content: '';
+    position: absolute;
+    background-color: var(--bg-color);
+    width: calc(100% + 8px);
+    height: 100%;
+    border-left: 3px solid var(--bg-color);
+    right: -8px;
+    animation: cursor 0.6s infinite, tying 0s steps(14) infinite;
+}
+@keyframes cursor {
+    to{
+        border-left: 2px solid var(--main-color);
+    }
+}
+@keyframes words {
+    0%, 2% {
+        content: 'software developer';
+    }
+    21%, 40% {
+        content: 'web developer';
+    }
+    61%, 80% {
+        content: 'youtuber';
+    }
+    81%, 100% {
+        content: 'content writer';
+    }
+}
+@keyframes typing{
+    10% , 15%
+    30% , 35%
+    40% , 45%
+    50% , 55%
+    70% , 75%
+    90% , 100% {
+        width: 0;
+    }
+    5% , 20%
+    25% , 40%
+    45% , 60%
+    65% , 80% , 85%  {
+    width: calc(100% + 8px);
+    }    
 }
