@@ -258,7 +258,7 @@ button:active{
     height: 100%;
     border-left: 3px solid var(--bg-color);
     right: -8px;
-    animation: cursor 0.6s infinite, tying 0s steps(14) infinite;
+    animation: cursor 20s infinite, tying 0s steps(14) infinite;
 }
 @keyframes cursor {
     to{
@@ -279,7 +279,7 @@ button:active{
         content: 'content writer';
     }
 }
-@keyframes typing{
+@keyframes typing {
     10% , 15%
     30% , 35%
     40% , 45%
